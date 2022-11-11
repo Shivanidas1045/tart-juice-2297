@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #navigation{
+            width:80%;
+            margin:auto;
+            height:80px;
+            border:0px solid green;
+            display:flex;
+            margin-top:40px;
+            
+
+        }
+        #navigation>div{
+            height:50px;
+            width:60px;
+            border:2px solid black;
+            
+            
+            
+            
+        }
+        #navigation>div:nth-child(1){
+            height:50px;
+            width:90px;
+            border:0px solid black;
+            margin-left:10px;
+            
+            
+            
+        }
+        #navigation>div:nth-child(2){
+            height:50px;
+            width:200px;
+            border:0px solid purple;
+            margin-left:10px;
+            position:right;
+        }  
+        #navigation>div:nth-child(3){
+            height:50px;
+            width:200px;
+            border:0px solid purple;
+            margin-left:10px;
+        
+        } 
+        #navigation>div:nth-child(4){
+            height:50px;
+            width:200px;
+            border:0px solid purple;
+        
+        }  
+        #navigation>div:nth-child(5){
+            height:50px;
+            width:200px;
+            border:0px solid purple;
+            margin-left:10px;
+        }  
+        #navigation>div:nth-child(6){
+            height:50px;
+            width:200px;
+            border:0px solid purple;
+            margin-left:10px;
+        }     
+            
+        
+        #navigation>div>div{
+            height:70px;
+            width:100%;
+            border:0px solid red;
+            margin-left:10px;
+            display:flex;
+            
+        }
+    
+    
+
+        h2{
+            margin-left:0px;
+        }
+        #nav{
+        
+            width:80%;
+            margin:auto;
+            height:80px;
+            border:0px solid blue;
+            display:flex;
+            margin-top:0px;
+            justify-content: space-evenly;
+            
+            
+        }
+        #nav>div:nth-child(2){
+            width:40px;
+            height:40px;
+            margin-top:10px;
+            border:0px solid brown;
+            
+            
+        }
+        #nav>div:nth-child(3){
+            width:70px;
+            height:80px;
+            margin-top:10px;
+            border:0px solid brown;
+            
+        }
+        #nav>div:nth-child(4){
+            width:70px;
+            height:80px;
+            margin-top:10px;
+            border:0px solid brown;
+            
+        }
+        form{
+        
+            padding:2px;
+            border :5px gold;
+            border-radius:70%;
+            margin-left:200px;
+            margin-top:10px;
+            
+        }
+        #in{
+            width:350px;
+            border-color: gold;
+        height:30px;
+        
+        }
+        #btn{
+            color:white;
+            background-color:gold;
+width:90px;
+height:32px;
+padding-bottom:7px;
+        }
+        #nav2{
+            width:80%;
+            margin:auto;
+            height:40px;
+            border:0px solid green;
+            display:flex;
+            margin-top:40px;
+            
+        }
+        #nav2>div:nth-child(1){
+            width:190px;
+            height:40px;
+            background-color:black;
+            color:white;
+            border:0px pink;
+            padding-left:30px;
+            align-items: center;
+        }
+        #nav2>div:nth-child(2){
+            width:180px;
+            height:40px;
+            background-color:gold;
+            color:black;
+            border:0px purple;
+            padding-left:80px;
+            
+        }
+        #nav2>div:nth-child(3){
+            width:180px;
+            height:40px;
+            background-color:gold;
+            color:black;
+            border:0px pink;
+            padding-left:80px;
+            align-items:center;
+        }
+        #nav2>div:nth-child(4){
+            width:180px;
+            height:40px;
+            background-color:gold;
+            color:black;
+            border:0px pink;
+            padding-left:80px;
+        }
+        #nav2>div:nth-child(5){
+            width:180px;
+            height:40px;
+            background-color:gold;
+            color:black;
+            border:0px pink;
+            
+        }
+        #nav2>div:nth-child(6){
+            width:180px;
+            height:40px;
+            background-color:gold;
+            
+        }
+        #nav2>div:nth-child(7){
+            width:160px;
+            height:40px;
+            background-color:gold;
+        
+        }
+        #nav3{
+            width:80%;
+            height:570px;
+            border:0px solid green;
+            margin:auto;
+            display:flex;
+        }
+        
+        #nav3>div:nth-child(1){
+            width:16%;
+            height:570px;
+            border:0px solid green;
+            margin:left;
+            
+            background-color:lightblue;
+        }
+        #sbox{
+            width:80%;
+            height:200px;
+            border:0px solid green;
+            margin:auto;
+            display:flex;
+            margin-top:20px;
+            justify-content:space-around;
+        
+        }
+        #sbox>div:nth-child(1){
+width:20%;
+height:200px;
+border:0px solid purple;
+        }
+        #sbox>div:nth-child(2){
+width:20%;
+height:200px;
+border:0px solid purple;
+        }
+        #sbox>div:nth-child(3){
+width:20%;
+height:200px;
+border:0px solid purple;
+        }
+        #sbox>div:nth-child(4){
+width:20%;
+height:200px;
+border:0px solid purple;
+        }
+        #radius{
+            border-radius:30%;
+            border-color: gold;
+            width:80%;
+            height:200px;
+            margin:auto;
+            margin-top:20px;
+
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="navigation">
+    <div>
+    
+     
+<img width="80%" src="https://api.logo.com/api/v2/images?format=webp&logo=logo_524d8316-43b1-4089-97c5-1fe5e538a7b7&width=1000&height=750&margins=166&fit=contain&u=1668015972"><h2>ShopYard</h2>
+</div>
+<div>
+    <select>
+        <option value="n">Save $3 with App</option>
+        <option value="na">Download the App</option>
+        
+    </select>
+</div>
+<div>
+    <a href="#">Support Center</a>
+
+</div>
+<div>
+    <select>
+        <option value="ni">Ship to USD</option>
+        <option value="nai">Download the App</option>
+        
+    </select>
+
+</div>
+<div>
+    <select>
+    <option value="l">Language</option>
+</select>
+</div>
+<div>
+    <select>
+ <option value="k">Country Website</option>
+ <option value="a">Global(English)</option>
+ <option value="t">France</option>
+ <option value="h">Espana</option>
+ <option value="ei">Poccnr</option>
+ <option value="r">Portugal</option>
+ <option value="i">Italia</option>
+ <option value="n">Deutschland</option>
+ <option value="e">Brasil</option>
+ <option value="p">Turkiye</option>
+ <option value="r">Polska</option>
+ <option value="c">Japan</option>
+ 
+ 
+ 
+  </select>  
+</div>
+</div>
+<div id="nav">
+    <div>
+        <form>
+        <input id="in" type="text"  placeholder="search">
+    
+    
+        <button id="btn" type="submit"><img width="25%" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png"></button>
+        
+</form>
+    </div>
+    <div>
+        
+        <img width="100%"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyMRRo7GpitHQgl4aA_HSmYhiWFNcKjQXlik59NUqsEYoy-cKfkeptM8_KpNyTZm45VA&usqp=CAU">
+        </div>
+        <div>
+            <img  width="70%"src="https://png.pngtree.com/png-vector/20190419/ourlarge/pngtree-vector-favorite-icon-png-image_956417.jpg">
+            <p>Favourites</p>
+            </div>
+            <div>
+                <img width="70%" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png">
+                <p>Cart</p>
+            </div>
+            </div>
+            <div id="nav2">
+                <div>
+                    <h1>Category</h1>
+                </div>
+                <div>
+                    <h3>SUPER DEALS</h3>
+                </div>
+                <div>
+                    <h3>APP ONLY</h3>
+                </div>
+                <div>
+                    <h3>NEW ARRIVALS</h3>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                </div>
+                <div id="nav3">
+                <div>
+                <h3>Consumer Electronics</h3><br>
+                <h3>Industrial & Scientific</h3><br>
+                <h3>Cell Phones & Accessories</h3><br>
+                <h3>Appliances</h3><br>
+                <h3>Outdoors Fitness & Sports</h3><br>
+                <h3>Computers Tablets & Office</h3><br>
+                <h3>Health & Personal Care</h3><br>
+                <h3>Home Improvement & Tools</h3><br>
+                <h3> Drones Toys & Hobbies</h3><br>
+                <h3>Home & Garden</h3><br>
+                <h3>Motor & Electronics</h3><br>
+                <h3>Men's Fashion</h3><br>
+                <div>
+            </div>
+            </div>
+            </div>
+            <div id="sbox">
+                <div>
+                    <img width="100%" src="https://uidesign.gbtcdn.com/GB/image/6080/230x120.jpg?imbypass=true">
+                
+                </div>
+                <div>
+                    <img width="100%" src="https://uidesign.gbtcdn.com/GB/image/8823/ortur_master3_230%C3%97120_en.jpg">
+                </div>
+                <div>
+                    <img width="100%" src="https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg">
+                </div>
+                <div>
+                    <img width="100%" src="https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg">
+                </div>
+                <div>
+                    <img width="100%" src="https://uidesign.gbtcdn.com/GB/image/6080/230x120.jpg?imbypass=true">
+                </div>
+                
+            </div>
+            <div id="radius">
+                <img src="https://uidesign.gbtcdn.com/GB/image/8823/eleven_1190x210_en.jpg">
+            </div>

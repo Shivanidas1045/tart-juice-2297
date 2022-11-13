@@ -19,27 +19,34 @@
         }
         #btn{
         margin-left:30px;
-            margin-top:30px;
+            margin-top:25px;
             border:none;
             font-style:inherit;
             color:black;
             background-color:gold;
-            font-size:18px;
+            font-size:23px;
             padding-top:10px;
             padding-bottom:10px;
             padding-left:10px;
             padding-right:10px;
+            border-radius:15%;
             
             
         }
         #bton{
             margin-left:30px;
-            margin-top:30px;
+            margin-top:25px;
             border:none;
             font-style:inherit;
-            color:grey;
-            background-color:white;
-            font-size:18px;
+            color:Black;
+            background-color:gold;
+            font-size:25px;
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:10px;
+            padding-bottom:10px;
+            border-radius:15%;
+            
         }
         #email{
             width:80%;
@@ -91,14 +98,22 @@
     margin-left:150px;
   }
   
+  
         
     </style>
 </head>
 <body>
+    <a href="http://127.0.0.1:5501/Day-3/register.html"></a>
+
+
+    <a href="http://127.0.0.1:5501/Day-3/Hhome%20page.html"></a>
+    
      <div id="logo">
     <img width="5%" src="https://api.logo.com/api/v2/images?format=webp&logo=logo_524d8316-43b1-4089-97c5-1fe5e538a7b7&width=1000&height=750&margins=166&fit=contain&u=1668015972"/><h2>ShopYard</h2>
     
     <form id="form-box">
+    
+
         
      
         <input id="btn" type="submit" value="SIGN IN">
@@ -108,8 +123,9 @@
         <a href="#">Forgot Password?</a><br><br>
         
   <input type="submit" id="ylw" value="Log In"><br>
-  <p>or connect via</p><br>
-  <img id="im" width="30%" src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png">
+  <p>If you don not have account register here!</p><br>
+  <a href="http://127.0.0.1:5501/Day-3/register.html">REGISTER</a>
+
   <form>
 
 
@@ -129,14 +145,17 @@
         pswrd:form.pswrd.value,
         }
         if (obj.email==""||obj.pswrd==""){
-            alert("Please fill all the details!!!")
+            alert("Please fill all the details!!!");
         
-            //console.log(obj);
+            //console.log(obj)
+        }else if(obj.email=="dasshivani313@gmail.com"||obj.pswrd=="shivani@1045"){
+            window.location.href="http://127.0.0.1:5501/Day-3/Hhome%20page.html";
+        }else{
         data.push(obj);
         localStorage.setItem("sign in",JSON.stringify(data))
 
         
-
+        
         }
     
         //console.log(obj);
@@ -145,5 +164,6 @@
 
         
     });
+    
 
 </script>

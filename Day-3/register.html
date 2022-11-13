@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+    *{
+            margin:0;
+            padding:0;
+        }
+        #loogo{
+            margin-left:50px;
+            margin-top:30px;
+            
+        }
+        #frm{
+            width:420px;
+            height:500px;
+            margin-left:950px;
+            margin-top:20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #sub{
+            margin-left:140px;
+            background-color:gold;
+            font-size:20px;
+            margin-top:30px;
+            font-size:30px;
+            padding-left:20px;
+            padding-right:20px;
+
+        }
+        #frm>p{
+            color:red;
+            margin-left:30px;
+        }
+        #b{
+        margin-left:120px;
+            margin-top:25px;
+            border:none;
+            font-style:inherit;
+            color:black;
+            background-color:gold;
+            font-size:23px;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;
+            border-radius:15%;
+            margin-bottom:20px;
+            
+            
+        }
+        #Email{
+            width:80%;
+            margin-left:40px;
+            font-size:26px;
+
+        }
+        #Pswrd{
+            width:80%;
+            margin-left:40px;
+            font-size:26px;
+
+        }
+        #Paswrd{
+            width:80%;
+            margin-left:40px;
+            font-size:26px;
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body><a href="http://127.0.0.1:5501/Day-3/Hhome%20page.html"></a>
+    
+    <div id="loogo">
+   <img width="5%" src="https://api.logo.com/api/v2/images?format=webp&logo=logo_524d8316-43b1-4089-97c5-1fe5e538a7b7&width=1000&height=750&margins=166&fit=contain&u=1668015972"/><h2>ShopYard</h2>
+   
+
+
+
+
+
+    <form id="frm">
+        
+        
+    <input id="b" type="submit" value="REGISTER"><br>
+    <input id="Email" type="text" placeholder="Email"/><br><br>
+    <input id="Pswrd" type="text" placeholder=" Create Password"/><br><br>
+    <input id="Paswrd" type="text" placeholder=" Re-type Password"/><br><br>
+    
+
+
+    <p>Tip:To maximise online security please do not reuse passwords or choose easy to guess ones on Shopyard</p>
+    <input id="sub" type="submit" value="Register">
+</form>
+</body>
+</html>
+<script>
+    let form=document.querySelector("#frm");
+    let data2=JSON.parse(localStorage.getItem("Register"))||[];
+    form.addEventListener("submit",function(event){
+
+           
+        event.preventDefault();
+        let obj={
+        email:form.Email.value,
+        Pswrd:form.Pswrd.value,
+        Paswrd:form.Paswrd.value,
+        }
+        if (obj.email==""||obj.Pswrd==""||obj.Paswrd==""){
+            alert("Please fill all the details!!!");
+        
+            //console.log(obj)
+        }else if(obj.email=="dasshivani313@gmail.com"||obj.Pswrd=="shivani@1045"||obj.Paswrd=="shivani@1045"){
+            window.location.href="http://127.0.0.1:5501/Day-3/Hhome%20page.html";
+        }else{
+        data2.push(obj);
+        localStorage.setItem("REGISTER",JSON.stringify(data2))
+
+        
+        
+        }
+    
+        //console.log(obj);
+        //data.push(obj);
+        //localStorage.setItem("sign in",JSON.stringify(data))
+
+        
+    });
+
+
+</script>
